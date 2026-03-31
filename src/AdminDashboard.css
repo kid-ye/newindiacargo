@@ -1,0 +1,220 @@
+.admin-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.admin-count {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.4);
+}
+
+.admin-user-info {
+  padding: 0.75rem 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.admin-user-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.admin-user-role {
+  font-size: 0.75rem;
+  color: #7ed5ff;
+  margin-top: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.admin-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* Orders list panel */
+.admin-orders-panel {
+  background: #0a1628;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-search {
+  padding: 0.85rem 1rem;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+  color: #f5f7fb;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.admin-search::placeholder { color: rgba(255,255,255,0.3); }
+
+.admin-orders-list {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.admin-order-row {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.admin-order-row:hover { background: rgba(255,255,255,0.04); }
+.admin-order-row.selected { background: rgba(126,213,255,0.08); border-left: 3px solid #7ed5ff; }
+
+.admin-order-row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.admin-order-id {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #7ed5ff;
+}
+
+.admin-order-route {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.admin-order-meta {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.45);
+}
+
+/* Update panel */
+.admin-update-panel {
+  background: #0a1628;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  position: sticky;
+  top: 1rem;
+}
+
+.admin-placeholder {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: rgba(255,255,255,0.35);
+}
+
+.admin-placeholder-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+
+.admin-update-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #7ed5ff;
+  margin-bottom: 0.3rem;
+}
+
+.admin-update-route {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.admin-update-customer {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 0.2rem;
+}
+
+.admin-update-meta {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.4);
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.admin-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.6rem;
+  margin-top: 1.25rem;
+}
+
+.admin-status-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.admin-status-btn {
+  padding: 0.45rem 0.85rem;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.82rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.admin-status-btn:hover {
+  border-color: #7ed5ff;
+  color: #7ed5ff;
+}
+
+.admin-status-btn.active {
+  background: rgba(126,213,255,0.15);
+  border-color: #7ed5ff;
+  color: #7ed5ff;
+  font-weight: 600;
+}
+
+.admin-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 0.75rem;
+  background: rgba(255,255,255,0.05);
+  color: #f5f7fb;
+  font-size: 0.95rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.admin-input:focus {
+  outline: none;
+  border-color: #7ed5ff;
+}
+
+.admin-input::placeholder { color: rgba(255,255,255,0.3); }
+
+.admin-update-form .dash-btn { width: 100%; margin-top: 1.5rem; }
+
+@media (max-width: 768px) {
+  .admin-layout { grid-template-columns: 1fr; }
+  .admin-update-panel { position: static; }
+}
